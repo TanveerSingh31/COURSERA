@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+}
+html{
+    font-family: 'DM Mono', monospace;
+    background-color: rgb(253, 250, 218);
+}
+#container{
+    margin:30px auto;
+    text-align: center;
+}
+
+#head{
+    margin:50px;
+}
+#box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:100px 2vw;
+}
+.section{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px ;
+    
+    width: 27%;
+    background-color: rgba(0, 0, 0, 0.295);
+    border: 3px solid black;
+    padding:0px 0px 20px 20px;
+    font-size: 13pt;
+}
+.head-container{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.section-heading{
+/*    position: relative;
+    left: 64%;
+
+   width:23%;
+    padding:3px 24px;
+    text-align: center;
+    
+
+    margin-bottom: 10px;
+*/
+    float: right;                         /* this sticks the heading to right*/
+    background-color: burlywood;
+    font-size: 20pt;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    padding:3px 5%;
+    margin-bottom: 10px;
+    
+
+}
+#one{
+    background-color: darkkhaki;
+}
+#three{
+    background-color: lightblue;
+}
+
+
+@media (max-width: 992px){
+    #box-container{
+        justify-content: space-between;
+    }
+    #sec1,#sec2{
+        width: 45%;
+    }
+    .section#sec3{
+       width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    #box-container{
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 5vw;
+    }
+    #sec1,#sec2,#sec3{
+        width: 100%;
+    }
+}
